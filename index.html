@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        function dispData() {
+            var fir = document.getElementById("fir").value;
+            
+            var mid = document.getElementById("mid").value;
+            
+            var las = document.getElementById("las").value;
+            
+            var em = document.getElementById("em").value;
+            
+            var pass = document.getElementById("pass").value;
+            console.log(`Firstname: ${fir}\nMiddlename: ${mid}\nLastname: ${las}\nEmail: ${em}\nPassword: ${pass}`);
+          }
+     </script>
+</head>
+<body>
+    
+<form>
+    <label for="fir">First Name: </label>
+    <br>
+    <input type="text" name="firstname" id="fir">
+    <br>
+    <label for="mid">Middle Name: </label>
+    <br>
+    <input type="text" name="midname" id="mid">
+    <br>
+    <label for="las">Last Name: </label>
+    <br>
+    <input type="text" name="lastname" id="las">
+    <br>
+    <label for="em">Email: </label>
+    <br>
+    <input type="email" name="email" id="em" required>
+    <br>
+    <label for="pass">Password: </label>
+    <br>
+    <input type="password" name="pwd" id="pass">
+    <br>
+    <br>
+    <input type="submit" value="Submit" onclick="dispData()">
+</form>
+</body>
+</html>
